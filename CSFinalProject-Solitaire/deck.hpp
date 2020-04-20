@@ -37,7 +37,6 @@ public:
     Deck();
     void displayDeck();
     void shuffleDeck();
-
 };
 
 

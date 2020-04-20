@@ -13,11 +13,13 @@
 
 class Game{
     
-public:
-    Game();
-    //Add public members of the Game Class here
 private:
     //Add private members of the Game Class here
+    
+public:
+    Game();
+    void playGame();
+    void displayMenu();
 };
 
 #endif /* game_hpp */
