@@ -32,11 +32,11 @@ string card::printCard(){
 
 class deck{
 private:
-    //deck();
     card *deckOfCards;
 public:
-    void printdeck();
     deck();
+    void printdeck();
+
 };
 
 deck::deck(){
@@ -53,26 +53,6 @@ void deck::printdeck(){
         cout<<deckOfCards[i].printCard()<<endl;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
