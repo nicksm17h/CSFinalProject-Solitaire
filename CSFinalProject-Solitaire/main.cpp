@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
     
     Deck newDeck;
     
-    newDeck.printDeck();
+    newDeck.displayDeck();
     
     
     return 0;

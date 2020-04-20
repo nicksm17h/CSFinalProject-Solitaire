@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 /*
     This will be the class that is responsible for all functions pretaining to the deck of
@@ -34,7 +35,8 @@ private:
     std::vector<Card> deckOfCards;
 public:
     Deck();
-    void printDeck();
+    void displayDeck();
+    void shuffleDeck();
 
 };
 

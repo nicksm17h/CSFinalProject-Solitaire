@@ -35,10 +35,14 @@ Deck::Deck(){
     }
 }
 
-void Deck::printDeck(){
+void Deck::displayDeck(){
     for (int i=0; i<52; i++){
         cout << deckOfCards[i].printCard() << endl;
     }
+}
+
+void Deck::shuffleDeck(){
+    random_shuffle(deckOfCards.begin(), deckOfCards.end());
 }
 
 
