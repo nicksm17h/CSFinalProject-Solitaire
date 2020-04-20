@@ -8,6 +8,33 @@
 
 #include "deck.hpp"
 
-Deck::Deck(){
-    
+using namespace std;
+
+Card::Card(){
 }
+
+Card::Card(std::string cardsuit, std::string cardtype){
+    suit=cardsuit;
+    type=cardtype;
+    //value=cardvalue;
+}
+std::string Card::printCard(Card card){
+    return (card.suit + " of  " + card.type);
+}
+
+
+Deck::Deck(){
+    string type[]= {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+    string suit[]= {"Hearts", "Diamonds", "Spades", "Clubs"};
+    for(unsigned i=0; i<52 ;i++){
+        deckOfCards.push_back(Card(type[i%13], suit[i%4]));
+    }
+}
+
+void Deck::printDeck(){
+    for (int i=0; i<52; i++){
+        cout << printCard(deckOfCards[i]) << endl;
+    }
+}
+
+

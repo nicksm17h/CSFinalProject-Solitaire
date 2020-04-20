@@ -7,19 +7,24 @@
 //
 
 #include <iostream>
+#include <string>
+#include <vector>
+#include "deck.hpp"
+#include "game.hpp"
+
+using namespace std;
+
+
+
+
+
 
 int main(int argc, const char * argv[]) {
     
     
-    /*
-     
-     
-     Here is where the main code will go
-     
-     
-     
-     */
+    Deck newDeck;
     
+    newDeck.printDeck();
     
     
     return 0;

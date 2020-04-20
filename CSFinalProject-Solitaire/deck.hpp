@@ -10,20 +10,36 @@
 #define deck_hpp
 
 #include <stdio.h>
+#include <string>
+#include <vector>
 
 /*
     This will be the class that is responsible for all functions pretaining to the deck of
     cards used in the game
  */
 
-class Deck{
+class Card{
+private:
+   
+    std::string suit;
+    std::string type;
+    //int value;
     
 public:
-    //Add public members of the Deck Class here
-    Deck(); //Deck constructor
-private:
-    //Add private members of the Deck Class here
-    
+    Card();
+    Card(std::string cardsuit, std::string cardtype);
+    std::string printCard(Card card);
 };
+
+class Deck{
+private:
+    std::vector<Card> deckOfCards;
+public:
+    Deck();
+    void printDeck();
+
+};
+
+
 
 #endif /* deck_hpp */
