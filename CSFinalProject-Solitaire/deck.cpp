@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <iomanip>
 #include "deck.hpp"
 
 
@@ -15,7 +16,7 @@ using namespace std;
 Card::Card(){
 }
 
-Card::Card(std::string cardsuit, std::string cardtype){
+Card::Card(std::string cardsuit, std::string cardtype, int value){
     suit=cardsuit;
     type=cardtype;
     //value=cardvalue;
@@ -30,15 +31,29 @@ Deck::Deck(){
     string type[]= {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     string suit[]= {"Hearts", "Diamonds", "Spades", "Clubs"};
     for(unsigned i=0; i<52 ;i++){
-        Card newCard(suit[i/13], type[i%13]);
+        Card newCard(suit[i/13], type[i%13], i%13);
         deckOfCards.push_back(newCard);
     }
 }
 
 void Deck::displayDeck(){
+    /*
     for (int i=0; i<52; i++){
         cout << i << ")" << deckOfCards[i].printCard() << endl;
     }
+     */
+    int a=0;
+    int b=13;
+    int c=26;
+    int d=39;
+    for (int i=0; i<=12; i++){
+        cout << setw(10) << deckOfCards[a].printCard() << "\t\t" << setw(10) << deckOfCards[b].printCard() << "\t\t" << setw(10) << deckOfCards[c].printCard() << "\t\t" << setw(10) << deckOfCards[d].printCard() << endl;
+        a=a+1;
+        b=b+1;
+        c=c+1;
+        d=d+1;
+    }
+    cout<<endl<<endl<<endl;
 }
 
 void Deck::shuffleDeck(){

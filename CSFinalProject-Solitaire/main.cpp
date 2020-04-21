@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
     
     Deck newDeck;
     Game newGame;
-    newDeck.shuffleDeck();
+    //newDeck.shuffleDeck();
     
     
     

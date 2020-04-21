@@ -23,10 +23,11 @@ class Card{
 private:
     std::string suit;
     std::string type;
+    int value;
     //int value;
 public:
     Card();
-    Card(std::string cardsuit, std::string cardtype);
+    Card(std::string cardsuit, std::string cardtype, int value);
     std::string printCard();
 };
 
