@@ -10,17 +10,25 @@
 #define game_hpp
 
 #include <stdio.h>
+#include <vector>
+#include "deck.hpp"
 
 class Game{
     
 private:
     //Add private members of the Game Class here
-    int primeDecks;
+    std::vector<Card> pile;
+    int numPrimeDecks;
+    int pileSum;
     
     
 public:
     Game();
     void playGame();
+    void checkPrime(int pileSum);
+    void newPile();
+    void checkWin();
+    
 };
 
 #endif /* game_hpp */

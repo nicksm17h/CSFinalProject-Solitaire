@@ -15,7 +15,15 @@ Game::Game(){
 }
 
 void Game::playGame(){
+    bool game = 1;
     
+    while(game){
+        
+        
+        
+    }
 }
 
-
+void Game::checkPrime(int pileSum){
+    
+}
