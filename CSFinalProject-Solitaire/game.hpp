@@ -15,11 +15,12 @@ class Game{
     
 private:
     //Add private members of the Game Class here
+    int primeDecks;
+    
     
 public:
     Game();
     void playGame();
-    void displayMenu();
 };
 
 #endif /* game_hpp */
