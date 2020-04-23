@@ -12,6 +12,8 @@ void Game::playGame(){
     bool game = 1;
 
     while(game){
+        cout << "Cards Left: " << cardsLeft << " The sum Of the Pile is: " << pileSum << " The number of Prime piles you have gone through thus far is: " << numPrimeDecks << endl << endl;
+
 
 
 
@@ -20,4 +22,12 @@ void Game::playGame(){
 
 void Game::checkPrime(int pileSum){
 
+
 }
+void newPile(){
+
+}
+void checkWin(){
+
+}
+

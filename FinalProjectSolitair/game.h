@@ -12,6 +12,7 @@ private:
     std::vector<Card> pile;
     int numPrimeDecks;
     int pileSum;
+    int cardsLeft;
 
 
 public:
