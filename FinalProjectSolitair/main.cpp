@@ -5,8 +5,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "deck.h"
+#include "game.h"
+
 
 using namespace std;
+
 
 
 
