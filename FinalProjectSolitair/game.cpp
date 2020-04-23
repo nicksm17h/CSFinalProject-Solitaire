@@ -24,10 +24,11 @@ void Game::checkPrime(int pileSum){
 
 
 }
-void newPile(){
-
+void newPile(std::vector<Card> pile, int & numPrimeDecks){
+        pile.clear();
+        numPrimeDecks += 1;
 }
-void checkWin(){
+bool checkWin(){
 
 }
 

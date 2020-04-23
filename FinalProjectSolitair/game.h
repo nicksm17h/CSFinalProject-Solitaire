@@ -19,8 +19,8 @@ public:
     Game();
     void playGame();
     void checkPrime(int pileSum);
-    void newPile();
-    void checkWin();
+    void newPile(std::vector<Card> pile, int & numPrimeDecks);
+    bool checkWin();
 
 };
 
