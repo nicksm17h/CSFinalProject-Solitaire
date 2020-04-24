@@ -29,7 +29,7 @@ int main(int argc, const char * argv[]) {
 
 
     while(run){
-        run = displayMenu(newDeck, newGame);
+        run = displayMenu(newDeck*/, newGame);
     }
 
 
