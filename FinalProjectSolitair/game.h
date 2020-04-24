@@ -13,13 +13,14 @@ private:
     int numPrimeDecks;
     int pileSum;
     int cardsLeft;
+    int deckIndex = 0;
 
 
 public:
-    Game();
+    Game(std::vector<Card> deckOfCards);
     void playGame();
-    void checkPrime(int pileSum);
-    void newPile(std::vector<Card> pile, int & numPrimeDecks);
+    void checkPrime();
+    void newPile();
     bool checkWin();
 
 };
