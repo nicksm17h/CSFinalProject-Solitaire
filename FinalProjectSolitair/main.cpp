@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
     bool run = 1;
 
     Deck newDeck;
-    Game newGame;
+    Game newGam( newDeck );
     //newDeck.shuffleDeck();
 
 
