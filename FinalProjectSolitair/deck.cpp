@@ -27,6 +27,7 @@ Deck::Deck(){
     for(unsigned i=0; i<52 ;i++){
         Card newCard(suit[i/13], type[i%13], i%13);
         deckOfCards.push_back(newCard);
+        ghost.push_back(newCard);
     }
 }
 
@@ -51,14 +52,14 @@ void Deck::displayDeck(){
 }
 
 void Deck::shuffleDeck(){
-    random_shuffle(deckOfCards.begin(), deckOfCards.end());
+    //random_shuffle(deckOfCards.begin(), deckOfCards.end());
 
-    /*
+
     srand (time(NULL));
     vector<int> check(52);
     int x = rand()%52;
     check.at(0) = x;
-    deckOfCards[0] = cards[x];
+    deckOfCards.at(0) = ghost.at(x);
     for(int i=1; i<52; i++){
         x = rand()%52;
         check.at(i) = x;
@@ -72,7 +73,7 @@ void Deck::shuffleDeck(){
                 x = rand()%52;
                 check.at(i) = x;
             }
-            else{deckOfCards[i] = cards[x];
+            else{deckOfCards[i] = ghost.at(x);
 
             }
 
@@ -80,6 +81,6 @@ void Deck::shuffleDeck(){
         a++;
         }
     }
-     */
+
 }
 
