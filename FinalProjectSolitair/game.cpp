@@ -31,7 +31,13 @@ void Game::playGame(){
     }
 }
 
-                        int sumPile(){
+int sumPile(){
+    int pileSum = 0;
+    for(int i = 0; i < pile.size(), i++){
+            pileSum += pile[i];
+    }
+
+    return pileSum;
 
 }
 
