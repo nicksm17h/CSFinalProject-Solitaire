@@ -30,7 +30,7 @@ void Game::playGame(){
         sumPile();
         checkPrime();
 
-        if (deckIndex == 51){
+        if (deckIndex == 51 && checkPrime() == 0){
                 checkWin();
         }
     }
@@ -46,8 +46,8 @@ int Game::sumPile(){
 
 }
 
-bool Game::checkPrime(){
-        //returns true if the sum of the pile is a prime number.
+bool Game::checkPrime(int pileSum){
+        //returns true if the sum of the pile (pileSum) is a prime number.
         //else it returns false
 
 }
@@ -57,6 +57,8 @@ void newPile(){
         numPrimeDecks += 1;
 }
 bool checkWin(){
+        if(){
 
+        }
 }
 
