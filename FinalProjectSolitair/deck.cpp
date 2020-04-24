@@ -13,7 +13,11 @@ Card::Card(){
 Card::Card(std::string cardsuit, std::string cardtype, int value){
     suit=cardsuit;
     type=cardtype;
-    //value=cardvalue;
+    value= value;
+}
+
+int Card::getValue(){
+        return value;
 }
 
 string Card::printCard(){

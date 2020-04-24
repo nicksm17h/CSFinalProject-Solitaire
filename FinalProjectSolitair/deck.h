@@ -16,10 +16,10 @@ private:
     std::string suit;
     std::string type;
     int value;
-    //int value;
 public:
     Card();
     Card(std::string cardsuit, std::string cardtype, int value);
+    int getValue();
     std::string printCard();
 };
 

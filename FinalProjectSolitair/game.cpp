@@ -6,60 +6,64 @@
 using namespace std;
 
 Game::Game(vector<Card> deckOfCards){
-private:
-    vector<Card> pile = {deckOfCards[0];
-    int numPrimeDecks;
-    int pileSum;
-    int cardsLeft;
+    vector<Card> pile = {deckOfCards[0]};
+    int numPrimeDecks = 0;
+    int pileSum = 0;
     int deckIndex = 1;
 }
 
-void Game::playGame(){
+int Game::getDeckIndex(){
+        return deckIndex;
+}
+
+void Game::playGame(vector<Card> deckOfCards){
     bool game = 1;
 
     while(game){
-        cout << "Cards Left: " << cardsLeft << " The sum Of the Pile is: " << pileSum << " The number of Prime piles you have gone through thus far is: " << numPrimeDecks << endl << endl;
+        char input;
+        cout << "Cards Left: " << 52 - (deckIndex +1) << " The sum Of the Pile is: " << pileSum << " The number of Prime piles you have gone through thus far is: " << numPrimeDecks << endl << endl;
         cout << "Press enter to put down a new card  (or press Q to quit)";
-        cin >> char input;
+        cin >> input;
 
         if (input == 'q' || input == 'Q'){
             exit(0);
         }
 
-        pile.pushBack(deckOfCards[deckIndex]);
-        sumPile();
-        checkPrime();
+        pile.push_back( deckOfCards[deckIndex] );
+        sumPile(deckOfCards);
+        checkPrime(deckOfCards);
 
-        if (deckIndex == 51 && checkPrime() == 0){
+        if (deckIndex == 51 && checkPrime(deckOfCards) == 0){
 
                 if (deckIndex == 51){
-                        pile[deckIndex + 1] = deckOfCards[deckIndex + 1]
+                        pile[deckIndex + 1] = deckOfCards[deckIndex + 1];
 
-                        if(checkPrime()){
+                        if(checkPrime(deckOfCards)){
                                 cout << "You have won the game!" << endl;
                                 exit(0);
                         }
 
                 }
         }
+    }
 }
 
-int Game::sumPile(){
+int Game::sumPile(vector<Card> deckOfCards){
     int pileSum = 0;
-    for(int i = 0; i < pile.size(), i++){
-            pileSum += pile[i];
+    for(int i = 0; i < pile.size(); i++){
+            pileSum += deckOfCards.at(i).getValue();
     }
 
     return pileSum;
 
 }
 
-bool Game::checkPrime(){
+bool Game::checkPrime(vector<Card> deckOfCards){
         //returns true if the sum of the pile is a prime number.
         //else it returns false
     vector<int>primeNumber={2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337};
-    for (int i=0;i<primeNumber,size()i++){
-        if (sumPile()==primeNumber[i]){
+    for (unsigned i=0;i < primeNumber.size(); i++){
+        if (sumPile(deckOfCards) ==primeNumber[i]){
             return true;
         }
         else{
@@ -67,9 +71,9 @@ bool Game::checkPrime(){
         }
     }
 }
-void newPile(){
+void newPile(vector<Card> pile, int & deckIndex, int & numPrimeDecks){
         pile.clear();
-        deckIndex =0;
+        deckIndex = 0;
         numPrimeDecks += 1;
 }
 

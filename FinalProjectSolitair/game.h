@@ -12,16 +12,16 @@ private:
     std::vector<Card> pile;
     int numPrimeDecks;
     int pileSum;
-    int cardsLeft;
-    int deckIndex = 0;
+    int deckIndex;
 
 
 public:
     Game(std::vector<Card> deckOfCards);
-    void playGame();
-    int sumPile();
-    bool checkPrime();
-    void newPile();
+    int getDeckIndex();
+    int sumPile(std::vector<Card> deckOfCards);
+    void playGame(std::vector<Card> deckOfCards);
+    bool checkPrime(std::vector<Card> deckOfCards);
+    void newPile(std::vector<Card> pile,  int & deckIndex, int & numPrimeDecks);
 
 };
 
