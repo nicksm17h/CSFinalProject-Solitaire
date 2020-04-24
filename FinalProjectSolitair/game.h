@@ -22,7 +22,6 @@ public:
     int sumPile();
     bool checkPrime();
     void newPile();
-    bool checkWin();
 
 };
 
