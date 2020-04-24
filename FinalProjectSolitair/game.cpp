@@ -30,11 +30,16 @@ void Game::playGame(){
         sumPile();
         checkPrime();
 
+<<<<<<< HEAD
         if (deckIndex == 51 && checkPrime() == 0){
                 if(checkWin()){
                         cout << "You have won the game!" << endl;
                         exit(0);
                 }
+=======
+        if (deckIndex == 51){
+                checkWin();
+>>>>>>> 0ff1c4e8fdd0f30206b30b5408645d51147b1407
         }
     }
 }
@@ -49,10 +54,18 @@ int Game::sumPile(){
 
 }
 
-bool Game::checkPrime(int pileSum){
-        //returns true if the sum of the pile (pileSum) is a prime number.
+bool Game::checkPrime(){
+        //returns true if the sum of the pile is a prime number.
         //else it returns false
-
+    vector<int>primeNumber={2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337};
+    for (int i=0;i<primeNumber,size()i++){
+        if sumpile()==primeNumber[i]{
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
 void newPile(){
         pile.clear();
@@ -60,6 +73,7 @@ void newPile(){
         numPrimeDecks += 1;
 }
 bool checkWin(){
+<<<<<<< HEAD
         vector <cards> winVector;
 
        for(int i = 0; i  deckOfCards; i++){
@@ -67,7 +81,8 @@ bool checkWin(){
        }
 
         if(checkPrime(sumPile(deckIndex[]}))){
+=======
+>>>>>>> 0ff1c4e8fdd0f30206b30b5408645d51147b1407
 
-        }
 }
 

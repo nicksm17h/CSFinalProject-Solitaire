@@ -59,7 +59,8 @@ bool displayMenu(Deck & newDeck, Game & newGame){
 
      switch(userChoice){
          case 1 :
-             newDeck.shuffleDeck();
+             //newDeck.shuffleDeck();
+             newDeck.displayDeck();
              break;
          case 2 :
              newDeck.shuffleDeck();
