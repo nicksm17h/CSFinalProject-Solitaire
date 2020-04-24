@@ -22,20 +22,22 @@ void Game::playGame(){
         cout << "Press enter to put down a new card  (or press Q to quit)";
         cin >> char input;
 
-        if (input == 'q' || 'Q'){
+        if (input == 'q' || input == 'Q'){
             exit(0);
         }
 
-        pile.pushBack
-
-
-
+        pile.pushBack(deckOfCards[deckIndex]);
 
     }
 }
 
-void Game::checkPrime(){
+                        int sumPile(){
 
+}
+
+bool Game::checkPrime(){
+        //returns true if the sum of the pile is a prime number.
+        //else it returns false
 
 }
 void newPile(){

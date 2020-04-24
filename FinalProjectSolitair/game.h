@@ -19,7 +19,8 @@ private:
 public:
     Game(std::vector<Card> deckOfCards);
     void playGame();
-    void checkPrime();
+    int sumPile();
+    bool checkPrime();
     void newPile();
     bool checkWin();
 
