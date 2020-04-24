@@ -20,7 +20,7 @@ public:
     Game(std::vector<Card> deckOfCards);
     void playGame();
     int sumPile();
-    bool checkPrime();
+    bool checkPrime(int pileSum);
     void newPile();
     bool checkWin();
 
