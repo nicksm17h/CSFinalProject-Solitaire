@@ -30,16 +30,18 @@ void Game::playGame(){
         sumPile();
         checkPrime();
 
-<<<<<<< HEAD
         if (deckIndex == 51 && checkPrime() == 0){
                 if(checkWin()){
                         cout << "You have won the game!" << endl;
                         exit(0);
                 }
-=======
+
         if (deckIndex == 51){
-                checkWin();
->>>>>>> 0ff1c4e8fdd0f30206b30b5408645d51147b1407
+                if(checkWin()){
+                        cout << "You Have won the game!";
+                        exit(0);"
+                }
+
         }
     }
 }
@@ -73,16 +75,13 @@ void newPile(){
         numPrimeDecks += 1;
 }
 bool checkWin(){
-<<<<<<< HEAD
         vector <cards> winVector;
 
        for(int i = 0; i  deckOfCards; i++){
             winVector[i] = deckOfCards
        }
 
-        if(checkPrime(sumPile(deckIndex[]}))){
-=======
->>>>>>> 0ff1c4e8fdd0f30206b30b5408645d51147b1407
+        if(checkPrime(sumPile(deckIndex[]})))
 
 }
 

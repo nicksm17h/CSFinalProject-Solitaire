@@ -1,4 +1,4 @@
-#ifndef GAME_H
+#ifndef GME_H
 #define GAME_H
 
 #include <stdio.h>
