@@ -27,7 +27,12 @@ void Game::playGame(){
         }
 
         pile.pushBack(deckOfCards[deckIndex]);
+        sumPile();
+        checkPrime();
 
+        if (deckIndex == 51){
+                checkWin();
+        }
     }
 }
 
