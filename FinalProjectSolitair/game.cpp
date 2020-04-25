@@ -17,34 +17,44 @@ int Game::getDeckIndex(){
 }
 
 void Game::playGame(vector<Card> deckOfCards){
-    bool game = 1;
-
-    while(game){
+    for(deckIndex; deckIndex < 52; deckIndex++){
         char input;
-        cout << "Cards Left: " << 52 - (deckIndex + 1)  << " The sum Of the Pile is: " << pileSum << " The number of Prime piles you have gone through thus far is: " << numPrimeDecks << endl << endl;
+        cout << "\nCards Left: " << 52 - (deckIndex + 1)  << " The sum Of the Pile is: " << pileSum << " The number of Prime piles you have gone through thus far is: " << numPrimeDecks << endl << endl;
         cout << "Press enter to put down a new card  (or press Q to quit)";
         cin >> input;
 
         if (input == 'q' || input == 'Q'){
             exit(0);
+        }else{
+
+            pile.push_back( deckOfCards[deckIndex] );
+            pileSum = sumPile(deckOfCards);
+
+            if(checkPrime(deckOfCards)){
+                deckIndex = 0;
+                numPrimeDecks += 1;
+                pileSum = 0;
+            }
+
+
+            if (deckIndex == 51 && checkPrime(deckOfCards) == 0){
+
+                    if (deckIndex == 51){
+                            pile[deckIndex + 1] = deckOfCards[deckIndex + 1];
+
+                            if(checkPrime(deckOfCards)){
+                                    cout << "\nYou have won the game!" << endl;
+                                    exit(0);
+                            }
+
+                    }
+            }
+
+
+
         }
 
-        pile.push_back( deckOfCards[deckIndex] );
-        sumPile(deckOfCards);
-        checkPrime(deckOfCards);
 
-        if (deckIndex == 51 && checkPrime(deckOfCards) == 0){
-
-                if (deckIndex == 51){
-                        pile[deckIndex + 1] = deckOfCards[deckIndex + 1];
-
-                        if(checkPrime(deckOfCards)){
-                                cout << "You have won the game!" << endl;
-                                exit(0);
-                        }
-
-                }
-        }
     }
 }
 
@@ -71,6 +81,7 @@ bool Game::checkPrime(vector<Card> deckOfCards){
         }
     }
 }
+
 void newPile(vector<Card> pile, int & deckIndex, int & numPrimeDecks){
         pile.clear();
         deckIndex = 0;

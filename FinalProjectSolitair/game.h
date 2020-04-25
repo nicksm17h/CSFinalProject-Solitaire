@@ -8,7 +8,6 @@
 class Game{
 
 private:
-    //Add private members of the Game Class here
     std::vector<Card> pile;
     int numPrimeDecks;
     int pileSum;

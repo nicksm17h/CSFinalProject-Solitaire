@@ -34,6 +34,9 @@ Deck::Deck(){
         ghost.push_back(newCard);
     }
 }
+vector<Card> Deck::getDeck(){
+        return deckOfCards;
+}
 
 void Deck::displayDeck(){
     /*
