@@ -22,14 +22,14 @@ int main(int argc, const char * argv[]) {
 
     bool run = 1;
 
-    Deck newDeck;
-    Game newGam( newDeck );
+    Deck* newDeck ;
+    Game& newGame(newDeck);
     //newDeck.shuffleDeck();
 
 
 
     while(run){
-        run = displayMenu(newDeck*/, newGame);
+        run = displayMenu(newDeck , newGame);
     }
 
 
@@ -70,7 +70,7 @@ bool displayMenu(Deck & newDeck, Game & newGame){
              newDeck.shuffleDeck();
              break;
          case 4 :
-             newGame.playGame();
+             newGame.playGame(newDeck);
              return 0;
          case 5 :
              return 0;

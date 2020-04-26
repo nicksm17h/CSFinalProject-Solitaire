@@ -50,7 +50,7 @@ void Game::playGame(vector<Card> deckOfCards){
 
 int Game::sumPile(vector<Card> deckOfCards){
     int pileSum = 0;
-    for(int i = 0; i < pile.size(); i++){
+    for(unsigned int i = 0; i < pile.size(); i++){
             pileSum += deckOfCards.at(i).getValue();
     }
 
@@ -71,7 +71,7 @@ bool Game::checkPrime(vector<Card> deckOfCards){
         }
     }
 }
-void newPile(vector<Card> pile, int & deckIndex, int & numPrimeDecks){
+void Game::newPile(vector<Card> pile, int & deckIndex, int & numPrimeDecks){
         pile.clear();
         deckIndex = 0;
         numPrimeDecks += 1;
