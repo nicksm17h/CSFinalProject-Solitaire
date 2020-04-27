@@ -11,7 +11,9 @@ private:
     //Add private members of the Game Class here
     std::vector<Card> pile;
     std::vector<Card> deckOfCards;
+    int* pntrPdecks;
     int numPrimeDecks;
+
     int pileSum;
     int deckIndex;
 
