@@ -1,3 +1,39 @@
+
+
+/*
+ * Project Title:
+ * - CS Final Project Solitaire
+ * Description: (should be a few sentences)
+ * This program can be used to play a game of solitaire. This version of solitaire is where the player takes the top card
+ * in a deck and puts it into a pile. They keeps adding the top cards untill that pile reaches a prime number. Then the player
+ * starts a new pile adding them up. The game endes once the player either runs out of moves or when they put their last card
+ * into a pile that adds up to a prime number.
+ *
+ * Developers:
+ * - Nicholas Smith - smith2ng@mail.uc.edu
+ * - Matthew Malloy - malloyml@mail.uc.edu
+ *
+ * Help Received:
+ * None
+ *
+ *Nicholas Smith:
+ *  My duty was rto separate the project up into separatge files and implement the header files.
+ * separating the files made the code itself alot more readable and alot more professional.
+ * I also implemented alot of the game getter functions along with the playGame() function. the playGame()
+ * function was somethign that took a little bit of thinking and forced me to think about all of the different variables
+ * acting on the playGame() function of the Game class. I was alsop responsible for implementing the entire main file.
+ * The main.cpp file is where i implemnted the displayMeue() function which displays the menue to the user and carries out the
+ * functions of the different classes.
+ *
+ * Matthew Malloy:
+ * I was responsible for making the deck of cards, I did this by making a vector that assigned each card to a spot of the vector
+ * then printed them out inorder. I also made the shuffle function which gave me alot of trouble. I couldnt manipulate the vector to
+ * do what I wanted to do so I needed to do alot of trial and error until I found something that worked. I was also responsible for
+ * making the checkprime() function which checks the pile to see if it adds up to a prime number and helped throughout everywhere else
+ * debugging some of the other functions.
+ */
+
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -41,6 +77,11 @@ bool displayMenu(Deck & newDeck, Game & newGame){       //Displays Menu
     cout << "working1\n";
 
     vector<Card> newDeckOfCards = newDeck.getDeck();
+
+   // for( int i = 0; i < newDeckOfCards.size(); i++){
+   //      cout << "Card: " << newDeckOfCards[i].printCard()  << endl;
+
+
      cout << "working2\n";
     Game newGame(newDeckOfCards);
     //newDeck.shuffleDeck();
