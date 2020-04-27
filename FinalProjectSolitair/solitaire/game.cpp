@@ -33,11 +33,9 @@ void Game::playGame(){
 
     while(game){
         char input;
-<<<<<<< HEAD
-        cout << "Cards Left: " << 52 - (&dI + 1)  << " The sum Of the Pile is: " << pntrPS << " The number of Prime piles you have gone through thus far is: " << pntrPdecks << endl << endl;
-=======
-        cout << "Cards Left: " << 52 - (*dI + 1)  << " The sum Of the Pile is: " << *pntrPS << " The number of Prime piles you have gone through thus far is: " << *pntrPdecks << endl << endl;
->>>>>>> d8b72d21fc74f6415168ee97661687ef58dcb8a6
+        cout << "Cards Left: " << 52 - (deckIndex + 1)  << " The sum Of the Pile is: " << pileSum << " The number of Prime piles you have gone through thus far is: " << numPrimeDecks << endl << endl;
+        //cout << "Cards Left: " << 52 - (*dI + 1)  << " The sum Of the Pile is: " << pntrPS << " The number of Prime piles you have gone through thus far is: " << pntrPdecks << endl << endl;
+        //cout << "Cards Left: " << 52 - (*dI + 1)  << " The sum Of the Pile is: " << *pntrPS << " The number of Prime piles you have gone through thus far is: " << *pntrPdecks << endl << endl;
         cout << "Press enter to put down a new card  (or press Q to quit)";
         cin >> input;
 

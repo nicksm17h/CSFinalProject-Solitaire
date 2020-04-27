@@ -23,9 +23,9 @@ public:
     Game();
     Game(std::vector<Card> & deckOfCards);
     int getDeckIndex();
-    int sumPile(std::vector<Card> deckOfCards);
+    int sumPile(std::vector<Card> & deckOfCards);
     void playGame();
-    bool checkPrime(std::vector<Card> deckOfCards);
+    bool checkPrime(std::vector<Card> & deckOfCards);
     void newPile(std::vector<Card> pile,  int & deckIndex, int & numPrimeDecks);
 
 };
