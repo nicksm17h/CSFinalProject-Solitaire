@@ -25,7 +25,7 @@ public:
 
 class Deck{
 private:
-     std::vector<Card> deckOfCards;
+    std::vector<Card> deckOfCards;
     std::vector<Card> ghost;
 public:
     Deck();
