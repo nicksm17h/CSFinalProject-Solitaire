@@ -11,10 +11,12 @@ Game:: Game(){
 }
 
 Game::Game(vector<Card> & adeckOfCards){
+    vector<Card> pile = {deckOfCards[0]};
     vector<Card> deckOfCards;
     int numPrimeDecks = 0;
     int pileSum = 0;
     int deckIndex = 1;
+
 }
 
 int Game::getDeckIndex(){
@@ -23,6 +25,11 @@ int Game::getDeckIndex(){
 
 void Game::playGame(){
     bool game = 1;
+
+    //poimnters
+    pntrPdecks = &numPrimeDecks;
+    pntrPS = &pileSum;
+    int deckIndex = 1;
 
     while(game){
         char input;

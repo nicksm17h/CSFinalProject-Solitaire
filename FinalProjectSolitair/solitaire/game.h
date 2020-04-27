@@ -13,8 +13,9 @@ private:
     std::vector<Card> deckOfCards;
     int* pntrPdecks;
     int numPrimeDecks;
-
+    int* pntrPS;
     int pileSum;
+    int* dI;
     int deckIndex;
 
 
