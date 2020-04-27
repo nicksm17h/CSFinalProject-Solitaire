@@ -18,33 +18,9 @@ bool displayMenu(Deck &, Game &);
 
 
 
-int main() {
-
-    bool run = 1;
-
-    Deck newDeck ;
-    Game newGame(newDeck.getDeck());
-    //newDeck.shuffleDeck();
 
 
-
-    while(run){
-        run = displayMenu(newDeck , newGame);
-    }
-
-
-
-
-
-
-
-
-
-    return 0;
-}
-
-bool displayMenu(Deck & newDeck, Game & newGame){
-    //Displayes Menue
+bool displayMenu(Deck & newDeck, Game & newGame){       //Displays Menu
 
 
 
@@ -79,7 +55,30 @@ bool displayMenu(Deck & newDeck, Game & newGame){
     return 1;
 }
 
+int main() {
 
+    bool run = 1;
+    Deck newDeck;
+    Game newGame(newDeck.getDeck());
+    //newDeck.shuffleDeck();
+cout<<"hey";
+std::cout<<displayMenu(newDeck,newGame);
+
+    while(run){
+        run = displayMenu(newDeck , newGame);
+        cout<<displayMenu(newDeck, newGame);
+    }
+
+
+
+
+
+
+
+
+
+    return 0;
+}
 //previous Main
 
 /*

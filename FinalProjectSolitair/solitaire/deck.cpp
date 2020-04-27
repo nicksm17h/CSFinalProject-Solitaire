@@ -14,11 +14,11 @@ Card::Card(){
 Card::Card(string cardsuit, string cardtype, int value){
     suit=cardsuit;
     type=cardtype;
-    value= value;
+    Value= value;
 }
 
 int Card::getValue(){
-        return value;
+        return Value;
 }
 
 string Card::printCard(){
@@ -36,7 +36,11 @@ Deck::Deck(){
 }
 
 vector <Card> Deck::getDeck(){
-    return this -> deckOfCards;
+    vector<Card>deckofcards;
+    for (unsigned i=0;i<deckOfCards.size();i++){
+        deckofcards.push_back(deckOfCards.at(i));
+    }
+    return deckofcards;
 }
 
 void Deck::displayDeck(){
