@@ -40,10 +40,13 @@ void Game::playGame(){
         if (input == 'q' || input == 'Q'){
             exit(0);
         }
+        else if (input=='n' || input=='N'){
+            pile.push_back( deckOfCards[deckIndex] );
+            sumPile(deckOfCards);
+            checkPrime(deckOfCards);
+        }
 
-        pile.push_back( deckOfCards[deckIndex] );
-        sumPile(deckOfCards);
-        checkPrime(deckOfCards);
+
 
         if (deckIndex == 51 && checkPrime(deckOfCards) == 0){
 
