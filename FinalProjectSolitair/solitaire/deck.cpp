@@ -14,11 +14,19 @@ Card::Card(){
 Card::Card(string cardsuit, string cardtype, int value){
     suit=cardsuit;
     type=cardtype;
+<<<<<<< HEAD
     Value= value;
+=======
+    Value = value;
+>>>>>>> 1647738600e4df6f4c294e9e28de07a8e02c4ace
 }
 
 int Card::getValue(){
         return Value;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1647738600e4df6f4c294e9e28de07a8e02c4ace
 }
 
 string Card::printCard(){

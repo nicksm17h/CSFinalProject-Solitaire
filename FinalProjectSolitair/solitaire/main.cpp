@@ -27,6 +27,7 @@ int main() {
     bool run = 1;
 
     Deck newDeck ;
+<<<<<<< HEAD
     Game newGame(newDeck.getDeck());
     //newDeck.shuffleDeck();
 >>>>>>> e3df3997b8bd2b45ec1e5019b23851c9228f9154
@@ -36,6 +37,16 @@ int main() {
 <<<<<<< HEAD
 bool displayMenu(Deck & newDeck, Game & newGame){       //Displays Menu
 =======
+=======
+    cout << "working1\n";
+
+    vector<Card> newDeckOfCards = newDeck.getDeck();
+     cout << "working2\n";
+    Game newGame(newDeckOfCards);
+    //newDeck.shuffleDeck();
+      cout << "working\n";
+
+>>>>>>> 1647738600e4df6f4c294e9e28de07a8e02c4ace
    while(run){
         run = displayMenu(newDeck , newGame);
     }
