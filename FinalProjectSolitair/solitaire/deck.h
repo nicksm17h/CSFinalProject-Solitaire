@@ -15,7 +15,7 @@ class Card{
 private:
     std::string suit;
     std::string type;
-    int value;
+    int Value;
 public:
     Card();
     Card(std::string cardsuit, std::string cardtype, int value);
