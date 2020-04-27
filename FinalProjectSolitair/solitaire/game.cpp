@@ -10,7 +10,7 @@ Game:: Game(){
     int deckIndex = 1;
 }
 
-Game::Game(vector<Card> adeckOfCards){
+Game::Game(vector<Card> & adeckOfCards){
     vector<Card> pile = {deckOfCards[0]};
     vector<Card> deckOfCards =  adeckOfCards;
     int numPrimeDecks = 0;

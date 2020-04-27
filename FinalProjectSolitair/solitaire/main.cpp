@@ -1,3 +1,6 @@
+
+//By Mathew Malloy and Nicholas
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -28,6 +31,12 @@ int main() {
     cout << "working1\n";
 
     vector<Card> newDeckOfCards = newDeck.getDeck();
+
+    for( int i = 0; i < newDeckOfCards.size(); i++){
+        cout << "Card: " << newDeckOfCards[i].printCard()  << endl;
+    }
+
+
      cout << "working2\n";
     Game newGame(newDeckOfCards);
     //newDeck.shuffleDeck();

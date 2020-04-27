@@ -18,7 +18,7 @@ private:
 
 public:
     Game();
-    Game(std::vector<Card> deckOfCards);
+    Game(std::vector<Card> & deckOfCards);
     int getDeckIndex();
     int sumPile(std::vector<Card> deckOfCards);
     void playGame();
