@@ -32,9 +32,9 @@ int main() {
 
     vector<Card> newDeckOfCards = newDeck.getDeck();
 
-    for( int i = 0; i < newDeckOfCards.size(); i++){
-        cout << "Card: " << newDeckOfCards[i].printCard()  << endl;
-    }
+   // for( int i = 0; i < newDeckOfCards.size(); i++){
+  //      cout << "Card: " << newDeckOfCards[i].printCard()  << endl;
+    //
 
 
      cout << "working2\n";
