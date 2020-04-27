@@ -28,6 +28,7 @@ string Card::printCard(){
 Deck::Deck(){
     string type[]= {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     string suit[]= {"Hearts", "Diamonds", "Spades", "Clubs"};
+    deckOfCards = {};
     for(unsigned i=0; i<52 ;i++){
         Card newCard(suit[i/13], type[i%13], i%13);
         deckOfCards.push_back(newCard);
@@ -36,11 +37,15 @@ Deck::Deck(){
 }
 
 vector <Card> Deck::getDeck(){
+<<<<<<< HEAD
     vector<Card>deckofcards;
     for (unsigned i=0;i<deckOfCards.size();i++){
         deckofcards.push_back(deckOfCards.at(i));
     }
     return deckofcards;
+=======
+    return deckOfCards;
+>>>>>>> e3df3997b8bd2b45ec1e5019b23851c9228f9154
 }
 
 void Deck::displayDeck(){

@@ -14,15 +14,81 @@ using namespace std;
 
 
 
-bool displayMenu(Deck &, Game &);
+bool displayMenu(Deck, Game);
 
 
 
+<<<<<<< HEAD
+=======
+int main() {
 
+    cout << "working\n";
 
+    bool run = 1;
+
+    Deck newDeck ;
+    Game newGame(newDeck.getDeck());
+    //newDeck.shuffleDeck();
+>>>>>>> e3df3997b8bd2b45ec1e5019b23851c9228f9154
+
+    cout << "working1\n";
+
+<<<<<<< HEAD
 bool displayMenu(Deck & newDeck, Game & newGame){       //Displays Menu
+=======
+   while(run){
+        run = displayMenu(newDeck , newGame);
+    }
 
 
+ /*
+    while(run){
+         int userChoice;
+         cout << "\nWelcome to Solitaire!\n";
+         cout << "1) New Deck \n2) Display Deck \n3) Shuffle Deck \n4) Play Solitaire \n5) Exit\n";
+        cout << "Please Enter choice: ";
+         cin >> userChoice;
+
+
+
+
+         switch(userChoice){
+             case 1 :
+                 //newDeck.shuffleDeck();
+                 newDeck.displayDeck();
+                 break;
+             case 2 :
+                 newDeck.shuffleDeck();
+                 newDeck.displayDeck();
+                 break;
+             case 3 :
+                 newDeck.shuffleDeck();
+                 break;
+             case 4 :
+                 newGame.playGame();
+                 run = 0;
+             case 5 :
+                 run = 0;
+
+         }
+     }
+*/
+
+
+
+
+
+
+
+
+    return 0;
+}
+
+bool displayMenu(Deck newDeck, Game newGame){
+    //Displayes Menue
+>>>>>>> e3df3997b8bd2b45ec1e5019b23851c9228f9154
+
+    cout << "working2\n";
 
     int userChoice;
      cout << "\nWelcome to Solitaire!\n";
@@ -30,7 +96,7 @@ bool displayMenu(Deck & newDeck, Game & newGame){       //Displays Menu
     cout << "Please Enter choice: ";
      cin >> userChoice;
 
-
+    cout << "working 3\n";
 
 
      switch(userChoice){
