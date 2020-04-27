@@ -29,11 +29,11 @@ void Game::playGame(){
     //poimnters
     pntrPdecks = &numPrimeDecks;
     pntrPS = &pileSum;
-    int deckIndex = 1;
+    dI = &deckIndex;
 
     while(game){
         char input;
-        cout << "Cards Left: " << 52 - (deckIndex + 1)  << " The sum Of the Pile is: " << pileSum << " The number of Prime piles you have gone through thus far is: " <<  numPrimeDecks << endl << endl;
+        cout << "Cards Left: " << 52 - (*dI + 1)  << " The sum Of the Pile is: " << *pntrPS << " The number of Prime piles you have gone through thus far is: " << *pntrPdecks = 0 << endl << endl;
         cout << "Press enter to put down a new card  (or press Q to quit)";
         cin >> input;
 
