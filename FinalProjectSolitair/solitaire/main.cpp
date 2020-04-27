@@ -1,5 +1,15 @@
 
-//By Mathew Malloy and Nicholas
+//By Mathew Malloy and Nicholas Smith
+
+/*Nicholas Smith:
+ *  My duty was rto separate the project up into separatge files and implement the header files.
+ * separating the files made the code itself alot more readable and alot more professional.
+ * I also implemented alot of the game getter functions along with the playGame() function. the playGame()
+ * function was somethign that took a little bit of thinking and forced me to think about all of the different variables
+ * acting on the playGame() function of the Game class. I was alsop responsible for implementing the entire main file.
+ * The main.cpp file is where i implemnted the displayMeue() function which displays the menue to the user and carries out the
+ * functions of the different classes.
+*/
 
 #include <iostream>
 #include <string>
