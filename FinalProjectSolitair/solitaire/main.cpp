@@ -25,10 +25,13 @@ int main() {
     bool run = 1;
 
     Deck newDeck ;
-    Game newGame(newDeck.getDeck());
-    //newDeck.shuffleDeck();
-
     cout << "working1\n";
+
+    vector<Card> newDeckOfCards = newDeck.getDeck();
+     cout << "working2\n";
+    Game newGame(newDeckOfCards);
+    //newDeck.shuffleDeck();
+      cout << "working\n";
 
    while(run){
         run = displayMenu(newDeck , newGame);

@@ -4,6 +4,11 @@
 #include "deck.h"
 
 using namespace std;
+Game:: Game(){
+    int numPrimeDecks = 0;
+    int pileSum = 0;
+    int deckIndex = 1;
+}
 
 Game::Game(vector<Card> adeckOfCards){
     vector<Card> pile = {deckOfCards[0]};

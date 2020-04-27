@@ -14,11 +14,12 @@ Card::Card(){
 Card::Card(string cardsuit, string cardtype, int value){
     suit=cardsuit;
     type=cardtype;
-    this ->Value = value;
+    Value = value;
 }
 
 int Card::getValue(){
-        return this ->Value;
+        return Value;
+
 }
 
 string Card::printCard(){
