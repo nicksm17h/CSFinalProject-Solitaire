@@ -5,8 +5,9 @@
 
 using namespace std;
 
-Game::Game(vector<Card> deckOfCards){
+Game::Game(vector<Card> adeckOfCards){
     vector<Card> pile = {deckOfCards[0]};
+    vector<Card> deckOfCards =  adeckOfCards;
     int numPrimeDecks = 0;
     int pileSum = 0;
     int deckIndex = 1;
@@ -16,7 +17,7 @@ int Game::getDeckIndex(){
         return deckIndex;
 }
 
-void Game::playGame(vector<Card> deckOfCards){
+void Game::playGame(){
     bool game = 1;
 
     while(game){

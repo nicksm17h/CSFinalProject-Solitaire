@@ -9,9 +9,9 @@
 using namespace std;
 
 Card::Card(){
-}
+};
 
-Card::Card(std::string cardsuit, std::string cardtype, int value){
+Card::Card(string cardsuit, string cardtype, int value){
     suit=cardsuit;
     type=cardtype;
     value= value;
@@ -25,7 +25,6 @@ string Card::printCard(){
     return (type + " of  " + suit );
 }
 
-
 Deck::Deck(){
     string type[]= {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     string suit[]= {"Hearts", "Diamonds", "Spades", "Clubs"};
@@ -34,6 +33,10 @@ Deck::Deck(){
         deckOfCards.push_back(newCard);
         ghost.push_back(newCard);
     }
+}
+
+vector <Card> Deck::getDeck(){
+    return this -> deckOfCards;
 }
 
 void Deck::displayDeck(){

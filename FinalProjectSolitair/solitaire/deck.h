@@ -25,10 +25,11 @@ public:
 
 class Deck{
 private:
-    const std::vector<Card> deckOfCards;
+    std::vector<Card> deckOfCards;
     std::vector<Card> ghost;
 public:
     Deck();
+    std::vector<Card> getDeck();
     void displayDeck();
     void shuffleDeck();
 };

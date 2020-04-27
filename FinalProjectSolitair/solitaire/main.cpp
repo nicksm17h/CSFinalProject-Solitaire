@@ -18,12 +18,12 @@ bool displayMenu(Deck &, Game &);
 
 
 
-int main(int argc, const char * argv[]) {
+int main() {
 
     bool run = 1;
 
-    Deck* newDeck ;
-    Game& newGame(newDeck);
+    Deck newDeck ;
+    Game newGame(newDeck.getDeck());
     //newDeck.shuffleDeck();
 
 
@@ -70,7 +70,7 @@ bool displayMenu(Deck & newDeck, Game & newGame){
              newDeck.shuffleDeck();
              break;
          case 4 :
-             newGame.playGame(newDeck);
+             newGame.playGame();
              return 0;
          case 5 :
              return 0;
