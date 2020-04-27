@@ -90,7 +90,7 @@ int main() {
     return 0;
 }
 
-bool displayMenu(Deck newDeck, Game newGame){
+bool displayMenu(Deck newDeck, Game newGame()){
     //Displayes Menue
 
     cout << "working2\n";
